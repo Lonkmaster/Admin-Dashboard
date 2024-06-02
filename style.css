@@ -1,0 +1,86 @@
+body { 
+    padding: 0px;
+    margin: 0px;
+}
+
+
+
+.gridContainer{
+    display: grid;
+    height: 100vh;
+    width: 100vw;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 6fr;
+}
+
+.header {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    gap: 15px;
+    padding: 10px;
+    grid-column: 2 / 3;
+    background-color: aqua;
+}
+
+.searchField {
+    display: grid;
+    padding-left: 25px;
+    align-items: center;
+    grid-template-columns: 1fr 12fr;
+}
+
+#searchBar {
+    max-width: 600px;
+    max-height: 25px;
+}
+
+.searchIcon {
+    height: 50px;
+    width: 50px;
+    background-image: url("../Admin-Dashboard/images/search-web.svg");
+}
+
+
+.profileContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+}
+
+.welcomeSection {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 100px 400px;
+    padding-left: 25px;
+
+}
+
+
+.profilePicTwo {
+    height: 50px;
+    width: 50px;
+    background-image: url("./images/emoticon-confused-outline.svg");   
+}
+
+.sidebar {
+    display: grid;
+    grid-row: 1 / 4;
+    background-color: blue;
+}
+.content {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    grid-column: 2 / 2;
+    grid-row: 2 / 2;
+    background-color: darkkhaki;
+}
+
+.Announcements {
+    display: grid;
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+}
