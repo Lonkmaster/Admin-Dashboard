@@ -3,14 +3,16 @@ body {
     margin: 0px;
 }
 
-
+* {
+    padding: 0px;
+    margin: 0px;
+}
 
 .gridContainer{
     display: grid;
     height: 100vh;
-    width: 100vw;
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 1fr 6fr;
+    grid-template-rows: 1fr 1fr;
 }
 
 .header {
@@ -21,7 +23,7 @@ body {
     gap: 15px;
     padding: 10px;
     grid-column: 2 / 3;
-    background-color: aqua;
+    background-color: white
 }
 
 .searchField {
@@ -39,20 +41,42 @@ body {
 .searchIcon {
     height: 50px;
     width: 50px;
-    background-image: url("../Admin-Dashboard/images/search-web.svg");
+    background-image: url("../Admin-Dashboard/images/magnify.svg");
 }
 
 
 .profileContainer {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    display: flex;
+    padding-left: 60px;
+    justify-content: center;
     align-items: center;
+    gap: 15px;
+}
+
+.profileContainer, .resize { 
+    max-height: 40px;
+}
+
+.profileContainer, .resize1 {
+    max-height: 25px;
+    min-height: 25px;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 20px;
+}
+
+.buttonContainer button {
+    height: 50px;
+    width: 100px;
+    border-radius: 10px;
 }
 
 .welcomeSection {
     display: grid;
     align-items: center;
-    grid-template-columns: 100px 400px;
+    grid-template-columns: 60px 400px;
     padding-left: 25px;
 
 }
@@ -66,21 +90,104 @@ body {
 
 .sidebar {
     display: grid;
-    grid-row: 1 / 4;
-    background-color: blue;
+    color: white;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto 1fr;
+    grid-gap: 30px;
+    padding: 15px 20px 20px 20px;
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+    background-color: #10a1e4e1;
 }
-.content {
+
+.icon {
+    display: flex;
+    font-weight: bold;
+    font-size: 20px;
+    
+}
+
+.mainLinks, .secondLinks {
+    list-style: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+li {
+    padding-bottom: 20px;
+}
+
+main {
     display: grid;
     grid-template-columns: 3fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 320px 320px 420px;
 
-    grid-column: 2 / 2;
-    grid-row: 2 / 2;
-    background-color: darkkhaki;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    gap: 25px;
+    background-color: lightgrey;
+    max-height: 100%;
+    padding: 40px 25px;
+}
+
+.projectHeader {
+    display: grid;
+    grid-column: 1 / 3;
+}
+
+.projects {
+    display: grid; 
+    gap: 20px;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+}
+
+.card {
+    background-color: white;
 }
 
 .Announcements {
+    display: flex;
+    gap: 15px;
+    flex-direction: column;
+}
+
+.AnnouncementsContainer {
     display: grid;
-    grid-column: 2 / 4;
-    grid-row: 2 / 4;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.AnnouncementCards {
+    padding: 10px;
+}
+
+.trending {
+    display: grid;
+    justify-content: center;
+    grid-column: 2 / 2;
+    grid-row: 2 / 3;
+}
+
+.trendingContainer {
+    display: grid;
+    padding: 25px;
+    border-radius: 15px;
+    background-color: white;
+}
+
+.trendingCards {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: 1fr 4fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.trendingCards img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
 }
