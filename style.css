@@ -172,7 +172,7 @@ main {
 
 .projectCard {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     grid-template-rows: auto 1fr 1fr 1fr;
     gap: 15px;
     
